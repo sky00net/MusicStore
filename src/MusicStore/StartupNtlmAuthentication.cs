@@ -84,7 +84,7 @@ namespace MusicStore
             if ((app.Server as ServerInformation) != null)
             {
                 var serverInformation = (ServerInformation)app.Server;
-                serverInformation.Listener.AuthenticationManager.AuthenticationTypes = AuthenticationTypes.NTLM;
+                serverInformation.Listener.AuthenticationManager.AuthenticationSchemes = AuthenticationSchemes.NTLM;
             }
 
             app.UseDatabaseErrorPage(DatabaseErrorPageOptions.ShowAll);

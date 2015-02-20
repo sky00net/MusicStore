@@ -1,6 +1,6 @@
 ﻿@using System.Security.Principal
 
-@if (User.Identity.IsAuthenticated)
+@if (User.IsLoggedIn())
 {
     //Either NTLM will be used or social authentication will be used. Based on the authentication schemes enabled remove an unused block.
     if (User.Identity.AuthenticationType != "NTLM")
