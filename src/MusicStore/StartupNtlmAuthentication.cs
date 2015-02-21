@@ -99,7 +99,7 @@ namespace MusicStore
                 //Who will get admin access? For demo sake I'm listing the currently logged on user as the application administrator. But this can be changed to suit the needs.
                 var identity = (ClaimsIdentity)context.User.Identity;
 
-                if (identity.GetUserName() == Environment.GetEnvironmentVariable("USERDOMAIN") + "\\" + Environment.GetEnvironmentVariable("USERNAME"))
+                if (context.User.GetUserName() == Environment.GetEnvironmentVariable("USERDOMAIN") + "\\" + Environment.GetEnvironmentVariable("USERNAME"))
                 {
                     identity.AddClaim(new Claim("ManageStore", "Allowed"));
                 }
