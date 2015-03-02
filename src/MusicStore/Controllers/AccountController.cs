@@ -2,11 +2,11 @@
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
+using Microsoft.AspNet.Authorization;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Mvc;
 using Microsoft.AspNet.Mvc.Rendering;
-using Microsoft.AspNet.Security;
 using Microsoft.Framework.DependencyInjection;
 using MusicStore.Models;
 
